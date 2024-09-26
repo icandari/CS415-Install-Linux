@@ -1,13 +1,14 @@
 #include <iostream>
 #include <string>
+#include "animal.h"
 
 using namespace std;
 
+
+
 int main() {
-    cout << "Hello World\n";
-    cout << "Input: ";
-    string data;
-    getline(cin, data);
-    cout << "Output: " << data << "\n\n";
-    return 0;
-}
+   Animal cow("Fred", "Farmer Joe");
+   Animal *dog = new Animal("Snaps", "Mary");
+   cow.printInfo();
+   delete dog;
+};
