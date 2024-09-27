@@ -11,4 +11,4 @@ int main() {
    Animal *dog = new Animal("Snaps", "Mary");
    cow.printInfo();
    delete dog;
-};
+   //ttt
